@@ -1,0 +1,22 @@
+name:                microsender
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Plain utility for sending short messages to serial port.
+homepage:            https://github.com/githubuser/microsender#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2016 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable microsender
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , serialport == 0.4.7
+                     , directory == 1.3.0.0
+                     , bytestring == 0.10.8.1
